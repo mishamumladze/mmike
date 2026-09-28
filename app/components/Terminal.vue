@@ -82,7 +82,7 @@ const run = (raw: string) => {
   switch (bin) {
     case "help":
       out.push(
-        "whoami · stack · log · principles · hire · sudo hire-me · clear · exit",
+        "whoami:\n     stack\n     log\n     principles\n     hire\n     sudo hire-me\n     clear\n     exit",
       );
       break;
     case "whoami":
@@ -139,11 +139,13 @@ const submit = () => run(input.value);
 
 const navHistory = (dir: 1 | -1) => {
   if (!history.value.length) return;
+  
   hIndex.value = Math.min(
     Math.max(hIndex.value + dir, -1),
     history.value.length - 1,
   );
-  input.value = hIndex.value === -1 ? "" : history.value[hIndex.value];
+  
+  input.value = hIndex.value === -1 ? "" : (history.value[hIndex.value] ?? "");
 };
 
 onMounted(() => {
