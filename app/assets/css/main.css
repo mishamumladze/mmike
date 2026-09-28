@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #09090b;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #34d399;
+  color: #09090b;
+}
+
+/* film grain — scoped to hero only, never fullscreen */
+.fx-grain {
+  position: relative;
+  isolation: isolate;
+}
+.fx-grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.7'/%3E%3C/svg%3E");
+}
+
+/* giant display type */
+.display-mega {
+  font-size: clamp(3.2rem, 14vw, 11rem);
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+}
+
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 2px #52525b;
+}
+
+/* glitch on hover — channel split, no libs */
+.glitch {
+  position: relative;
+  display: inline-block;
+}
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.glitch-hover:hover::before {
+  opacity: 0.85;
+  color: #34d399;
+  clip-path: inset(8% 0 58% 0);
+  transform: translate(-4px, -2px);
+  animation: glitch-slice 0.32s steps(2) infinite;
+}
+.glitch-hover:hover::after {
+  opacity: 0.85;
+  color: #fff;
+  clip-path: inset(62% 0 6% 0);
+  transform: translate(4px, 2px);
+  animation: glitch-slice 0.28s steps(2) infinite reverse;
+}
+@keyframes glitch-slice {
+  0% {
+    clip-path: inset(8% 0 58% 0);
+  }
+  50% {
+    clip-path: inset(42% 0 28% 0);
+  }
+  100% {
+    clip-path: inset(70% 0 4% 0);
+  }
+}
+
+/* hero crosshair */
+.hero-crosshair {
+  cursor: crosshair;
+}
+
+/* velocity marquee — speed driven by JS var */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee var(--marquee-speed, 24s) linear infinite;
+}
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* blinking caret */
+.blink {
+  animation: blink 1s steps(1) infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* subtle signal flicker */
+.flicker {
+  animation: flicker 5s infinite;
+}
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  93% {
+    opacity: 0.6;
+  }
+  94% {
+    opacity: 1;
+  }
+  96% {
+    opacity: 0.75;
+  }
+  97% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .marquee-track,
+  .flicker,
+  .blink {
+    animation: none;
+  }
+}
