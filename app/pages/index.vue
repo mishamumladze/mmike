@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-useHead({ title: "Misha Mumladze — systems that move" });
+useHead({ title: "Misha Mumladze - systems that move" });
 
 const stack = [
   [
@@ -25,7 +25,7 @@ const principles = [
   "Every line of code is debt. Build what's necessary, optimize ruthlessly, ship it.",
   "Frontend devs who don't understand servers ship slow apps. I live across the stack.",
   "Perfect is the enemy of done. Ship, measure, iterate.",
-  "Deployment, monitoring, scaling, failure modes — from day one, not day 300.",
+  "Deployment, monitoring, scaling, failure modes - from day one, not day 300.",
 ];
 
 onMounted(() => {
@@ -132,7 +132,7 @@ onMounted(() => {
         <p
           class="mt-6 max-w-2xl text-sm leading-relaxed text-zinc-400 sm:text-base"
         >
-          Remote-friendly or Tbilisi-based. Long-term thinking — though I do
+          Remote-friendly or Tbilisi-based. Long-term thinking - though I do
           freelance too. I respond to serious inquiries within 24 hours.
         </p>
         <div class="mt-8 flex flex-wrap gap-3 font-mono text-sm">
@@ -155,7 +155,7 @@ onMounted(() => {
           </MagneticButton>
         </div>
         <p class="mt-8 font-mono text-xs text-zinc-600">
-          georgian — native · english — fluent (c1) · russian — basic (a1)
+          georgian - native · english - fluent (c1) · russian - basic (a1)
           <span class="mx-2 text-emerald-400/50">|</span>
           press
           <kbd

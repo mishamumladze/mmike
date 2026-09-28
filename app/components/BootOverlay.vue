@@ -5,7 +5,7 @@ const overlay = ref<HTMLElement | null>(null);
 const done = ref(false);
 
 const bootLines = [
-  "MMIKE.OS v6.0 — cold boot",
+  "MMIKE.OS v6.0 - cold boot",
   "checking cpu ................ OK",
   "checking memory ............. OK",
   "checking tbilisi uplink ..... OK",

@@ -16,7 +16,7 @@ body {
   color: #09090b;
 }
 
-/* film grain — scoped to hero only, never fullscreen */
+/* film grain - scoped to hero only, never fullscreen */
 .fx-grain {
   position: relative;
   isolation: isolate;
@@ -43,7 +43,7 @@ body {
   -webkit-text-stroke: 2px #52525b;
 }
 
-/* glitch on hover — channel split, no libs */
+/* glitch on hover - channel split, no libs */
 .glitch {
   position: relative;
   display: inline-block;
@@ -88,7 +88,7 @@ body {
   cursor: crosshair;
 }
 
-/* velocity marquee — speed driven by JS var */
+/* velocity marquee - speed driven by JS var */
 .marquee-track {
   display: flex;
   width: max-content;

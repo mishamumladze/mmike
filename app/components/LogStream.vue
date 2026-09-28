@@ -8,20 +8,20 @@ const log = [
   {
     file: "2019-2025_funtravel.log",
     year: "2019 →",
-    who: "FunTravelGeorgia — Web Developer & IT Operations Lead",
+    who: "FunTravelGeorgia - Web Developer & IT Operations Lead",
     what: "Production React/Next.js under real load. 50+ person infra, Windows + Linux, PHP backends, DB tuning, PPC and ops. Uptime was my job, not someone else's.",
   },
   {
     file: "2025-now_clearsource.log",
     year: "2025 →",
-    who: "ClearSource Translations — Interpreter",
+    who: "ClearSource Translations - Interpreter",
     what: "Georgian ↔ English ↔ Russian. Communication systems across language barriers. Same skill as debugging: listen precisely, translate exactly.",
   },
   {
     file: "legacy_repair.log",
     year: "∞",
     who: "Computer Repair Technician",
-    what: "Hardware diagnosis, OS installs, systems from first principles. Learned how things break — and how to fix them fast at 2 AM.",
+    what: "Hardware diagnosis, OS installs, systems from first principles. Learned how things break - and how to fix them fast at 2 AM.",
   },
 ];
 
@@ -53,7 +53,7 @@ onMounted(() => {
       ref="track"
       class="flex h-screen w-max items-center gap-8 px-6 sm:gap-16 sm:px-16"
     >
-      <div class="w-[80vw] shrink-0 sm:w-[32vw]">
+      <div class="w-[80vw] shrink-0 sm:w-[32vw] mr-10">
         <p class="font-mono text-xs text-emerald-400">$ tail -f ops.log</p>
         <h2 class="display-mega mt-4 font-black uppercase text-white">
           scar<br />tissue<span class="text-emerald-400">.</span>

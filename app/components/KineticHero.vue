@@ -155,7 +155,7 @@ const split = (word: string) => word.split("");
       <p
         class="boot-fade mt-8 max-w-2xl text-base leading-relaxed text-zinc-400 sm:text-lg"
       >
-        I don't build websites. React, Next.js, PHP, Linux infrastructure —
+        I don't build websites. React, Next.js, PHP, Linux infrastructure -
         stacked, optimized, shipped. 6+ years of production code. No frameworks
         for the sake of frameworks.
       </p>

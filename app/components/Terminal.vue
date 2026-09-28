@@ -12,7 +12,7 @@ const inputEl = ref<HTMLInputElement | null>(null);
 const bodyEl = ref<HTMLDivElement | null>(null);
 
 const BOOT = [
-  "mmikeOS v6.0 — all systems operational",
+  "mmikeOS v6.0 - all systems operational",
   "type 'help' to poke around. 'exit' to escape.",
 ];
 
@@ -86,7 +86,7 @@ const run = (raw: string) => {
       );
       break;
     case "whoami":
-      out.push("misha mumladze — systems builder, tbilisi. react/php/linux.");
+      out.push("misha mumladze - systems builder, tbilisi. react/php/linux.");
       break;
     case "stack":
       out.push(
@@ -96,9 +96,9 @@ const run = (raw: string) => {
       out.push("tooling: git, cli+scripting, vscode, pnpm, profiling.");
       break;
     case "log":
-      out.push("2019-2025 funtravelgeorgia — prod react, 50+ person infra.");
-      out.push("2025-now clearsource — ka/en/ru interpretation.");
-      out.push("before — hardware repair. 2 AM debugging certified.");
+      out.push("2019-2025 funtravelgeorgia - prod react, 50+ person infra.");
+      out.push("2025-now clearsource - ka/en/ru interpretation.");
+      out.push("before - hardware repair. 2 AM debugging certified.");
       break;
     case "principles":
       out.push("01 every line of code is debt. ship what's necessary.");
@@ -108,7 +108,7 @@ const run = (raw: string) => {
       break;
     case "hire":
       out.push("email: misha.mumladze2007@gmail.com");
-      out.push("phone: +995 595 505 402 — replies within 24h.");
+      out.push("phone: +995 595 505 402 - replies within 24h.");
       break;
     case "sudo":
       if (args.join(" ") === "hire-me") {
@@ -127,7 +127,7 @@ const run = (raw: string) => {
       close();
       return;
     default:
-      out.push(`command not found: ${bin} — try 'help'`);
+      out.push(`command not found: ${bin} - try 'help'`);
   }
   lines.value.push(...out);
   if (lines.value.length > 200) lines.value = lines.value.slice(-200);
@@ -161,7 +161,7 @@ onMounted(() => {
     window.removeEventListener("open-terminal", external);
   });
 });
-// ponytail: no autocomplete or real fs — add when people actually use it.
+// ponytail: no autocomplete or real fs - add when people actually use it.
 </script>
 
 <template>
@@ -184,7 +184,7 @@ onMounted(() => {
             <span class="h-2.5 w-2.5 rounded-full bg-zinc-700" />
             <span class="h-2.5 w-2.5 rounded-full bg-emerald-400" />
           </span>
-          guest@mmike — zsh
+          guest@mmike - zsh
         </span>
         <span>esc to close</span>
       </div>
