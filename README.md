@@ -13,22 +13,22 @@ Personal portfolio website. Single-page Nuxt application rendering resume conten
 
 ## Structure
 
-- `app/app.vue` — root layout: `BootOverlay`, `StatusBar`, `Header`, `NuxtPage`, `Footer`, `Terminal`
-- `app/pages/index.vue` — only route; page sections and content data
-- `app/components/` — `BootOverlay`, `Header`, `Footer`, `StatusBar`, `KineticHero`, `ProofTicker`, `LogStream`, `ParticleGrid`, `TiltCard`, `MagneticButton`, `Reveal`, `Terminal`
-- `app/assets/css/main.css` — global styles
-- `app/plugins/smooth-scroll.client.ts` — client-only smooth scrolling
+- `app/app.vue` - root layout: `BootOverlay`, `StatusBar`, `Header`, `NuxtPage`, `Footer`, `Terminal`
+- `app/pages/index.vue` - only route; page sections and content data
+- `app/components/` - `BootOverlay`, `Header`, `Footer`, `StatusBar`, `KineticHero`, `ProofTicker`, `LogStream`, `ParticleGrid`, `TiltCard`, `MagneticButton`, `Reveal`, `Terminal`
+- `app/assets/css/main.css` - global styles
+- `app/plugins/smooth-scroll.client.ts` - client-only smooth scrolling
 - `nuxt.config.ts`, `tailwind.config.ts`, `tsconfig.json`
 
 ## Scripts
 
 From `package.json`:
 
-- `pnpm dev` — development server (`http://localhost:3000`)
-- `pnpm build` — production build
-- `pnpm generate` — static pre-render
-- `pnpm preview` — preview production build
-- `pnpm install` — install dependencies (`postinstall` runs `nuxt prepare`)
+- `pnpm dev` - development server (`http://localhost:3000`)
+- `pnpm build` - production build
+- `pnpm generate` - static pre-render
+- `pnpm preview` - preview production build
+- `pnpm install` - install dependencies (`postinstall` runs `nuxt prepare`)
 
 ## Setup
 

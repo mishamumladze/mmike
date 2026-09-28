@@ -12,14 +12,14 @@ const log = [
     what: "Production React/Next.js under real load. 50+ person infra, Windows + Linux, PHP backends, DB tuning, PPC and ops. Uptime was my job, not someone else's.",
   },
   {
-    file: "2025-now_clearsource.log",
-    year: "2025 →",
+    file: "2026-now_clearsource.log",
+    year: "2026 →",
     who: "ClearSource Translations - Interpreter",
     what: "Georgian ↔ English ↔ Russian. Communication systems across language barriers. Same skill as debugging: listen precisely, translate exactly.",
   },
   {
-    file: "legacy_repair.log",
-    year: "∞",
+    file: "2025-2026legacy_repair.log",
+    year: "2025 →",
     who: "Computer Repair Technician",
     what: "Hardware diagnosis, OS installs, systems from first principles. Learned how things break - and how to fix them fast at 2 AM.",
   },
