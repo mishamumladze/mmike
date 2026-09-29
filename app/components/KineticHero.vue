@@ -138,13 +138,13 @@ const split = (word: string) => word.split("");
           >
         </span>
         <span
-          class="parallax-layer block overflow-hidden"
+          class="parallax-layer block"
           data-depth="1.2"
           aria-hidden="true"
         >
           <span
             ref="moveWord"
-            class="boot-letter inline-block touch-none select-none text-emerald-400"
+            class="boot-letter inline-block touch-none select-none text-emerald-400 overflow-hidden"
             data-cursor="drag"
             title="grab me. throw me."
             >MOVE_</span

@@ -30,9 +30,17 @@ const links = [
       </ul>
       <a
         href="mailto:misha.mumladze2007@gmail.com"
-        class="flex items-center gap-1 rounded bg-emerald-400 px-3 py-1.5 font-mono text-xs font-semibold text-zinc-950 transition-colors hover:bg-emerald-300"
+        class=""
       >
-        hire me <ArrowUpRight class="h-3.5 w-3.5" aria-hidden="true" />
+        <MagneticButton>
+          <a
+            href="mailto:misha.mumladze2007@gmail.com"
+            class="flex items-center gap-1 rounded bg-emerald-400 px-3 py-1.5 font-mono text-xs font-semibold text-zinc-950 transition-colors hover:bg-emerald-300"
+            data-cursor="open"
+          >
+            hire me
+          </a>
+        </MagneticButton>
       </a>
     </nav>
   </header>
