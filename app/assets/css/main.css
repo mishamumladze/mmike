@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -92,7 +96,7 @@ body {
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee var(--marquee-speed, 24s) linear infinite;
+  animation: marquee var(--marquee-speed, 50s) linear infinite;
 }
 @keyframes marquee {
   to {

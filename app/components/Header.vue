@@ -12,9 +12,10 @@ const links = [
 <template>
   <header class="sticky top-0 z-[100] border-b border-white/10 bg-zinc-950">
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <!-- Removed glitch + glitch-hover, thinking of keeping just hover -->
       <a
         href="#top"
-        class="glitch glitch-hover font-mono text-sm font-bold tracking-tight text-white"
+        class="hover:text-emerald-400 transition-colors font-mono text-sm font-bold tracking-tight text-white"
         data-text="mmike_"
       >
         mmike<span class="text-emerald-400">_</span>

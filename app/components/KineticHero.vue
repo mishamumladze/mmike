@@ -194,11 +194,12 @@ const split = (word: string) => word.split("");
       </div>
     </div>
 
-    <div
+    <!-- Track: Needs to be fixed, it goes crazy when user scrolls -->
+    <!-- <div
       class="marquee border-y border-emerald-400/25 bg-black/60 py-3 font-mono text-sm uppercase tracking-widest text-emerald-400/90"
     >
       <div class="marquee-track">
-        <span v-for="n in 2" :key="n" class="flex shrink-0" aria-hidden="true">
+        <span v-for="n in 3" :key="n" class="flex shrink-0" aria-hidden="true">
           <span
             v-for="t in ticker"
             :key="`${n}-${t}`"
@@ -209,6 +210,6 @@ const split = (word: string) => word.split("");
           </span>
         </span>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>

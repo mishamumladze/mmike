@@ -12,16 +12,16 @@ const log = [
     what: "Production React/Next.js under real load. 50+ person infra, Windows + Linux, PHP backends, DB tuning, PPC and ops. Uptime was my job, not someone else's.",
   },
   {
-    file: "2026-now_clearsource.log",
-    year: "2026 →",
-    who: "ClearSource Translations - Interpreter",
-    what: "Georgian ↔ English ↔ Russian. Communication systems across language barriers. Same skill as debugging: listen precisely, translate exactly.",
-  },
-  {
     file: "2025-2026legacy_repair.log",
     year: "2025 →",
     who: "Computer Repair Technician",
     what: "Hardware diagnosis, OS installs, systems from first principles. Learned how things break - and how to fix them fast at 2 AM.",
+  },
+  {
+    file: "2026-now_clearsource.log",
+    year: "2026 →",
+    who: "ClearSource Translations - Interpreter",
+    what: "Georgian ↔ English ↔ Russian. Communication systems across language barriers. Same skill as debugging: listen precisely, translate exactly.",
   },
 ];
 
@@ -65,7 +65,7 @@ onMounted(() => {
       <article
         v-for="e in log"
         :key="e.file"
-        class="group w-[84vw] shrink-0 rounded border border-white/10 bg-zinc-950 p-8 transition-colors hover:border-emerald-400/40 sm:w-[36vw] sm:p-10"
+        class="group w-[84vw] h-[60vh] shrink-0 rounded border border-white/10 bg-zinc-950 p-8 transition-colors hover:border-emerald-400/40 sm:w-[36vw] sm:p-10"
         data-cursor="read"
       >
         <p

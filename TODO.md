@@ -5,9 +5,9 @@
 - [x] The throwable Move_ span is being cropped by the parent ellement
 - [] the ticker goes crazy after user scrols
 ### 2. header.vue
-- [] the logo "mike" should have a simpler hover effect or a different style, hovering it rn makes it unreadable
+- [x] the logo "mike" should have a simpler hover effect or a different style, hovering it rn makes it unreadable
 ### 3. LogStream.vue
-- [] sort it by date (old to new)
+- [x] sort it by date (old to new)
 ### 4. index.vue
 - [] the stacks divs are being cropped by the parent ellement
 ### 5. ParticleGrid.vue
